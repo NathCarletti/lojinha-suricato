@@ -27,7 +27,7 @@ export function SearchBar({ value, onChange, placeholder = 'Buscar produtos...' 
         <FiSearch 
           className="absolute left-3 top-1/2 transform -translate-y-1/2 
                     text-gray-500 w-4 h-4"
-        /> //FiSearch é um ícone de busca
+        /> 
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export const Cart = () => {
                 <p className="text-slate-600">R$ {item.product.price.toFixed(2)}</p>
               </div>
             </div>
-            <div className="flex items-center space-x-4"> //flex para alinhar os itens horizontalmente, space-x-4 é o espaçamento entre os itens
+            <div className="flex items-center space-x-4"> 
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => updateQuantity(item.product.id, Math.max(0, item.quantity - 1))}
@@ -58,7 +58,7 @@ export const Cart = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4"> //div para exibir o total e o botão de checkout, mt é margin top
+      <div className="mt-4"> 
         <p className="text-xl font-bold mb-4 text-slate-800">
           Total: R$ {state.total.toFixed(2)}
         </p>

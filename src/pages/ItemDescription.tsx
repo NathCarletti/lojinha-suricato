@@ -72,7 +72,7 @@ export const ItemDescription = () => {
               <p className="text-slate-200">{product.description}</p>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2"> gap-2 é o espaçamento entre os itens
+              <div className="flex items-center gap-2"> 
                 <span className="text-sm text-slate-200">Avaliação:</span>
                 <span className="text-yellow-500">★</span>
                 <span className="text-slate-200">{product.rating.rate}</span>
