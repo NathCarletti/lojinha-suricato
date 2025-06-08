@@ -53,7 +53,7 @@ A estrutura de pastas dentro da pasta `src/` segue uma separação clara de resp
 ├── types/ # Tipagens TypeScript (tipos e interfaces)
 ├── App.tsx # Componente raiz da aplicação com rotas
 ├── main.tsx # Ponto de entrada do React (ReactDOM)
-
+```
 ---
 
 ## 🧪 Tecnologias utilizadas
