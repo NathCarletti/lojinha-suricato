@@ -1,58 +1,69 @@
-<<<<<<< HEAD
-# lojinha-suricato
-=======
-# React + TypeScript + Vite
+# 🛍️ Projeto Loja React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma **loja virtual** desenvolvida com **React + Vite + TypeScript**, simulando a experiência completa de um usuário navegando, adicionando produtos ao carrinho e finalizando uma compra.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- Listagem de produtos com **cards interativos**
+1. **Página de listagem de produtos:**
+   - Cards exibindo imagem, nome, preço e botão "Adicionar ao carrinho"
+   - Clique no card leva à página de detalhes do item
+2. **Página de detalhes do produto:**
+   - Exibe imagem, descrição e avaliações do item
+   - Contém botão para adicionar ao carrinho
+3. **Carrinho lateral:**
+   - Sempre visível
+   - Exibe imagem, nome, preço e quantidade dos produtos
+   - Botão "Checkout" para seguir para o resumo da compra
+4. **Página de Checkout:**
+   - Mostra o resumo do pedido
+   - Botão "Finalizar compra"
+5. **Tela de confirmação:**
+   - Mensagem de sucesso da compra
+   - Seta/botão para retornar à página inicial
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Como rodar o projeto
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+2. Navegue até a pasta do projeto:
+    cd nome-da-pasta
+3.  Instale as dependências:
+    pm install
+4. Inicie o servidor de desenvolvimento:
+   npm run dev
+5. Acesse o projeto via navegador:
+   http://localhost:5173/
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
->>>>>>> 3855fa2 (setup inicial do projeto)
+## 🗂️ Organização do código
+
+A estrutura de pastas dentro da pasta `src/` segue uma separação clara de responsabilidades:
+src/
+├── components/ # Componentes reutilizáveis (Card, Header, Cart, etc.)
+├── pages/ # Páginas da aplicação (Home, ProductDetails, Checkout, Success)
+├── context/ # Contextos globais (ex: Carrinho)
+├── api/ # Simulações ou chamadas de API
+├── types/ # Tipagens TypeScript (tipos e interfaces)
+├── App.tsx # Componente raiz da aplicação com rotas
+├── main.tsx # Ponto de entrada do React (ReactDOM)
+
+---
+
+## 🧪 Tecnologias utilizadas
+
+- [React](https://reactjs.org/) com [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) como bundler e dev server
+- [Tailwind CSS](https://tailwindcss.com/) para estilização
+- [React Router](https://reactrouter.com/) para navegação entre páginas
+- [localStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage) para persistência dos dados do carrinho
+- [useReducer](https://react.dev/reference/react/useReducer) e [useEffect](https://react.dev/reference/react/useEffect) para gerenciamento de estado
+
+---
+
