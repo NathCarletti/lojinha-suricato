@@ -45,7 +45,7 @@ Este é um projeto de uma **loja virtual** desenvolvida com **React + Vite + Typ
 ## 🗂️ Organização do código
 
 A estrutura de pastas dentro da pasta `src/` segue uma separação clara de responsabilidades:
-src/
+```src/
 ├── components/ # Componentes reutilizáveis (Card, Header, Cart, etc.)
 ├── pages/ # Páginas da aplicação (Home, ProductDetails, Checkout, Success)
 ├── context/ # Contextos globais (ex: Carrinho)
